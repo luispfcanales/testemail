@@ -16,9 +16,7 @@ func main() {
 	pass := os.Getenv("PASS_GMAIL")
 	if email == "" || pass == "" {
 		log.Fatalln("configure sus variables de entorno")
-	} else {
-		fmt.Println(email)
-		fmt.Println(pass)
+		return
 	}
 	m := gomail.NewMessage()
 
